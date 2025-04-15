@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: auto;
+    margin: auto;
+    background-color: #fff;
+}
+
+.menu-area {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+img {
+    height: 90px;
+    width: 90px;
+}
+
+.logo{
+    margin-left: 25px;
+}
+
+.menu-itens {
+    margin-right: 25px;
+}   
+
+.menu-itens ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #8B4513;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #8B4513;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+footer {
+    margin: auto;
+    max-width: auto; 
+}
+
+.area--rodape {
+    background-color: #fff;
+    height: 70px;
+    text-align: center;
+    padding: 30px;
+    color: #5e2e0b;
+    font-size: 18px;
+}
+
+.menuMobile {
+    display: none;
+    height: 40px;
+    width: 40px;
+}
+
+.mm-line {
+    height: 3px;
+    background-color: #fff;
+}
+
+@media (max-width: 1140px) {
+    .container .banner .area--texto .footer {
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .logo img {
+        height: 75px;
+        width: 75px;
+    }
+}
+
+@media (max-width: 425px) {
+    .area--texto h1 {
+        font-size: 60px;
+    }
+    .area--texto h3 {
+        font-size: 20px;
+    }
+    .banner {
+        background-position: cover;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #DEB887;
+        padding-bottom: 5px;
+    }
+    header {
+        height: auto;
+    }
+    .logo img {
+        height: 70px;
+        width: 70px;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 375px) {
+    .area--texto h1 {
+        font-size: 55px;
+        padding-left: 9px;
+    }
+    .area--texto h3 {
+        font-size: 18px;
+    }
+    .banner {
+        background-position: cover;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #DEB887;
+        padding-bottom: 5px;
+    }
+    header {
+        height: auto;
+    }
+    .logo img {
+        height: 65px;
+        width: 65px;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 35px;
+        width: 35px;
+    }
+    .area--rodape {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .area--texto h1 {
+        font-size: 45px;
+        padding-left: 10px;
+    }
+    .area--texto h3 {
+        font-size: 17px;
+    }
+    .logo img {
+        height: 60px;
+        width: 60px;
+}
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 30px;
+        width: 30px;
+    }
+    .area--rodape {font-size: 12px;
+    }
+}
